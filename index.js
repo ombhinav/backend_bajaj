@@ -48,7 +48,7 @@ app.post('/bfhl', (req, res) => {
 
 // GET route
 app.get('/bfhl', (req, res) => {
-    res.json({ operation_code: 1 });
+    res.status(200).json({ operation_code: 1 });
 });
 
 const PORT = process.env.PORT || 5001;
