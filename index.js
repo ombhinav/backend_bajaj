@@ -7,8 +7,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const allowedOrigins = ['http://localhost:3000', 'https://your-frontend-domain.vercel.app'];
-
+const allowedOrigins = [
+  'http://localhost:3000',  
+  'https://frontend-bajaj-ruddy.vercel.app/'  
+];
 app.use(cors({
   origin: function(origin, callback){
     if(!origin) return callback(null, true);
